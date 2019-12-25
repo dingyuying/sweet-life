@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="cake.css">
+</head>
+<body>
+	<div class="mainBox" class="mainBox">
+		<div class="topSlogan" id="topSlogan">
+			<p class="firstSlogan" id="firstSlogan">心悦</p>
+			<p class="secondSlogan" id="secondSlogan">买蛋糕 上心悦</p>
+		</div>
+		<div class="centerBox" id="centerBox">
+			<!-- 密码登陆 -->
+			<div class="onload" id="onload">
+				<a class="passwordOnload" id="passwordOnload" href="cake.html">登录</a>
+				<a class="nopasswordOnload" id="checkon" href="checkon.html">注册</a>
+			</div>
+			<!-- 登陆 -->
+			<div>
+				<!-- 输入用户名 -->
+				<div class="user">
+					<input class="username" id="username" type="text" placeholder="用户名" onfocus="openUsername()" onblur="closeUsername()">
+					<p class="notice" id="usernameNotice"></p>
+				</div>
+				<!-- 输入密码 -->
+				<div class="psw">
+					<input class="password" id="password" type="password" placeholder="密码" onfocus="openPassword()" onblur="closePassword()">
+					<p class="notice" id="passwordNotice"></p>
+				</div>
+				<!-- 确认密码 -->
+				<div class="psw2">
+					<input class="password2" id="password2" type="password" placeholder="密码" onfocus="openPassword2()" onblur="closePassword2()">
+					<p class="notice" id="checkNotice"></p>
+				</div>
+				<!-- 自动登录 -->
+				<div class="check">
+					<input type="checkbox" checked="">下次自动登录
+				</div>
+				<div class="btn">
+					<button class="btn" onclick="submit()" id="btn">登录</button>
+				</div>
+			</div>
+			<div class="bottom">
+				<li>未注册账号自动创建后自动登录</li>
+				<li>注册代表同意《隐私保护指引》</li>
+			</div>
+		</div>
+	</div>
+		<div class="secondBox">
+			<div class="otherOnload">其他方式登录</div>
+			<div class="qqOnload" id="qqOnload">
+				<img src="qq.png">
+				<a class="qq" id="qq" href="qq.html">QQ</a>
+			</div>
+			<div class="wxOnload" id="wxOnload">
+				<img src="wx.png">
+				<a class="wx" id="wx" href="wx.html">微信</a>
+			</div>
+			<div class="wbOnload" id="wbOnload">
+				<img src="wb.png">
+				<a class="wb" id="wb" href="wb.html">微博</a>
+			</div>
+		</div>
+		<div class="thirdBox" id="thirdBox">
+			<a href="onload.html">下载心悦APP</a>
+		</div>
+	</div>
+</body>
+<script>
+	//用户名提示
+	function openUsername()
+	{
+		var usernameNotice = document.getElementsByClassName("notice")[0];
+		usernameNotice.innerText = "请输入4-10位用户名";
+	}
+	function closeUsername()
+	{
+		var usernameNotice = document.getElementsByClassName("notice")[0];
+		usernameNotice.innerText = "";
+	}
+	//密码提示
+	function openPassword()
+	{
+		var passwordNotice = document.getElementsByClassName("notice")[1];
+		passwordNotice.innerText = "请输入6-12位密码";
+	}
+	function closePassword()
+	{
+		var passwordNotice = document.getElementsByClassName("notice")[1];
+		passwordNotice.innerText = "";
+	}
+	//确认密码
+	function openPassword2()
+	{
+		var passwordNotice2 = document.getElementsByClassName("notice")[2];
+		passwordNotice2.innerText = "请再次输入密码";
+	}
+	function closePassword2()
+	{
+		var passwordNotice2 = document.getElementsByClassName("notice")[2];
+		passwordNotice2.innerText = "";
+	}
+	//提交验证
+	function submit()
+	{
+		//用户名
+		var str1 = username.value;
+		//密码
+		var str2 = password.value;
+		//确认密码
+		var str3 = password2.value;
+		//错误提示
+		if(str1.length<4 || str1.length>10)
+			usernameNotice.innerHTML="用户名位数不对";
+		else if(str2.length<6 || str2.length>12)
+			passwordNotice.innerHTML="密码位数不对";
+		else if(str2 != str3)
+			passwordNotice2.innerHTML="密码输入不一致";
+		//允许提交
+		else
+			alert("登录成功")
+		
+	}
+</script>
+</html>

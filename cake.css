@@ -1,0 +1,126 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(cake.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+.mainBox{
+	width:1200px;
+	height:800px;
+	margin-top:10px;
+	margin-left:500px;
+}
+.topSlogan{
+	width:150px;
+	height:120px;
+	left:450px;
+}
+.firstSlogan{
+	font-size:60px;
+	color:white;
+}
+.secondSlogan{
+	font-size:20px;
+	color:white;
+}
+.centerBox{
+	width:400px;
+	height:400px;
+	background-color: #f2f5fc;
+	opacity: 0.9;
+	top:140px;
+	left:420px;
+	position:absolute;
+}
+.onload{
+	margin-top:2px;
+	margin-left:20px;
+}
+#username{
+	height:30px;
+}
+#password{
+	height:30px;
+}
+#password2{
+	height:30px;
+}
+#btn{
+	height:25px;
+}
+.user{
+	height:40px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.psw{
+	height:40px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.psw2{
+	height:40px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.check{
+	height:40px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.btn{
+	margin-left: 10px;
+}
+.bottom{
+	height:100px;
+	margin-top:20px;
+	margin-left: 10px
+}
+
+.secondBox{
+	width:400px;
+	height:55px;
+	background-color:white;
+	top:580px;
+	left:420px;
+	position:absolute;
+	background-color: #f2f5fc;
+	opacity: 0.9;
+}
+.otherOnload{
+	display: inline-block;
+	line-height: 55px;
+	margin-left: 20px;
+}
+.qqOnload{
+	display:inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.wxOnload{
+	display:inline-block;
+	margin-left: 20px;
+}
+.wbOnload{
+	display:inline-block;
+	margin-left: 20px;
+}
+.thirdBox{
+	width:400px;
+	height:40px;
+	background-color:white;
+	top:660px;
+	left:420px;
+	position:absolute;
+	background-color: #f2f5fc;
+	opacity:0.9;
+	line-height:40px;
+	text-align:center;
+}
