@@ -8,9 +8,8 @@
 <body>
 	<div class="mainBox" class="mainBox">
 		<div class="topSlogan" id="topSlogan">
-			<a href="https://dingyuying.github.io/sweet-life/"><p class="firstSlogan" id="firstSlogan">心悦</p>
-			<p class="secondSlogan" id="secondSlogan">买蛋糕 上心悦</p></a>
-			
+			<p class="firstSlogan" id="firstSlogan">心悦</p>
+			<p class="secondSlogan" id="secondSlogan">买蛋糕 上心悦</p>
 		</div>
 		<div class="centerBox" id="centerBox">
 			<!-- 密码登陆 -->
@@ -23,21 +22,21 @@
 				<!-- 输入用户名 -->
 				<div class="user">
 					<input class="username" id="username" type="text" placeholder="用户名" onfocus="openUsername()" onblur="closeUsername()">
-					<p class="notice" id="usernameNotice"></p>
+					<div id="usernameNotice"><p class="notice" ></p></div>
 				</div>
 				<!-- 输入密码 -->
 				<div class="psw">
 					<input class="password" id="password" type="password" placeholder="密码" onfocus="openPassword()" onblur="closePassword()">
-					<p class="notice" id="passwordNotice"></p>
+					<div id="passwordNotice"><p class="notice"></p></div>
 				</div>
 				<!-- 确认密码 -->
 				<div class="psw2">
 					<input class="password2" id="password2" type="password" placeholder="密码" onfocus="openPassword2()" onblur="closePassword2()">
-					<p class="notice" id="checkNotice"></p>
+					<div id="checkNotice"><p class="notice"></p></div>
 				</div>
 				<!-- 自动登录 -->
 				<div class="check">
-					<input type="checkbox" checked="">下次自动登录
+					<input type="checkbox" checked="" id="next">下次自动登录
 				</div>
 				<div class="btn">
 					<button class="btn" onclick="submit()" id="btn">登录</button>

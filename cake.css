@@ -10,13 +10,12 @@ body{
 a{
 	text-decoration:none;
 	color:black;
-	left:20px;
 }
 .mainBox{
 	width:1200px;
 	height:800px;
 	margin-top:10px;
-	margin-left:500px;
+	margin-left:550px;
 }
 .topSlogan{
 	width:150px;
@@ -42,19 +41,47 @@ a{
 }
 .onload{
 	margin-top:2px;
-	margin-left:20px;
+	margin-left:150px;
 }
 #username{
 	height:30px;
+	width:250px;
+	margin-left:50px;
+}
+#usernameNotice{
+	font-weight:0.8;
+	color:rgb(68,63,64);
+	font-size:15px;
+	margin-left:50px;
 }
 #password{
 	height:30px;
+	width:250px;
+	margin-left:50px;
+}
+#passwordNotice{
+	font-weight:0.8;
+	color:rgb(68,63,64);
+	font-size:15px;
+	margin-left:50px;
 }
 #password2{
 	height:30px;
+	width:250px;
+	margin-left:50px;
+}
+#checkNotice{
+	font-weight:0.8;
+	color:rgb(68,63,64);
+	font-size:15px;
+	margin-left:50px;
+}
+#next{
+	margin-left:100px;
 }
 #btn{
 	height:25px;
+	outline: none;
 }
 .user{
 	height:40px;
@@ -77,14 +104,22 @@ a{
 	margin-top: 20px;
 }
 .btn{
-	margin-left: 10px;
+	margin-left:10px;
+}
+#btn{
+	width:200px;
+	height:40px;
+	margin-left:80px;
+	background-color:#f4dfc5;
 }
 .bottom{
 	height:100px;
 	margin-top:20px;
-	margin-left: 10px
+	margin-left:60px;
 }
-
+li{
+	color:gray;
+}
 .secondBox{
 	width:400px;
 	height:55px;

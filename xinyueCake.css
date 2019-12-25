@@ -186,6 +186,9 @@
             cursor: pointer;
             margin-right: 10px;
         }
+        .six p:hover{
+            color:rgb(253, 109, 133);
+        }
         .change_p li div {
             position: absolute;
             left: 0;
@@ -197,7 +200,6 @@
         .change_p span {
             position: relative;
             left: 0;
-            z-index: -1;
             display: block;
             margin: 10px 0 0;
             width: auto;
