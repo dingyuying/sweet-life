@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心悅蛋糕</title>
+    <link rel="stylesheet" href="xinyueCake.css">
+    <!-- <script src="animate.js"></script> -->
+</head>
+
+<body>
+     <nav>
+        <ul>
+            <li><a class="active" href="#home">主页</a></li>
+            <li><a class="active" href="#news">蛋糕小铺</a></li>
+            <li><a class="active" href="#news">定制蛋糕</a></li>
+            <li><a class="active" href="#news">加入我们</a></li>
+            <li><a class="active" href="#news">登陆/注册</a></li>
+            <li class="move"></li>
+        </ul>
+
+    </nav>
+    <div class="try-btn">
+    <a><img src="http://act.mcake.com/fangli/2019/mcake/images/try-btn.png" alt></a>
+    </div>
+    <div class="header"></div>
+    <div class="header2">
+        <h2>Fraise-Chantilly</h2> 
+    </div>
+    <div class="three"></div>
+    <div id="box">
+        <div id="img1">
+             <img src="images/cake1.jpg" width="300" height="300" id="Simg"/>
+             <div id="slider"></div>
+             <div class="one">
+                <span>Framboises mousse aux fruit de la passion et l'orange,forment un nuage de nuits douces et acides,sur l'avenue dorée parfumée. </span>
+             </div>
+        </div>
+           
+        <div id="img2">
+            <img src="images/cake01.jpg"  id="Bimg"/>
+        </div>
+    </div>
+
+    <div class="four"></div>
+    <div class="five">
+        <span>￥355.00</span>
+        <h2>丝滑般享受</h2>
+        <p>若不及时食用，请放置0-10℃冷藏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________一场新鲜的派对/所有的口感都不落俗套___________</p>
+    </div>
+
+
+    <div class="six">
+    <ul class="change_p">
+            <li id="size_id_11248" edible="2-3人食" size="16cm*10cm*8cm" aheadtime="提前五小时预定">
+                <div></div>
+                <span>1磅（454g）</span>
+            </li>
+            <li id="size_id_11249" edible="4-7人食" size="23cm*14cm*8cm" aheadtime="提前五小时预定" class="cur">
+                <div></div>
+                <span>2磅（908g）</span>
+            </li>
+            <li id="size_id_11250" edible="8-12人食" size="28cm*18cm*8cm" aheadtime="提前五小时预定">
+                <div></div>
+                <span>3磅（1.36kg）</span>
+            </li>
+            <li id="size_id_11251" edible="12-20人食" size="36cm*22cm*8cm" aheadtime="提前五小时预定">
+                <div></div>
+                <span>5磅（2.27kg）</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="seven">
+        <ul class="buy_btn_box">
+            <li>
+                <input type="button" value="加入购物车" class="add_cart">
+            </li>
+            <li>
+                 <input type="button" value="立即购买" class="buy_now">
+            </li>
+            <input type="hidden" value="11249" id="pro_id">
+        </ul>
+    </div>
+
+
+    <div class="bottom">
+        <div class="last-1" style="width:100%;height:40px;margin:0 auto;background-color:burlywood;">
+            <div style="height:20px;"><img src="images/buttom.png" alt="" width="100%"></div>
+            <div style="margin: 0 auto;color:aliceblue;font-size: 20px;font-family:cursive">
+                --- 源自18国优选原料用心精制而成 ---
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom">
+        <div class="last">
+            <div class="last-1">
+                <a href="#">首页</a>
+                <span>|</span>
+                <a href="#">蛋糕小铺</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">股权交易与变更</a>
+                <span>|</span>
+                <a href="#">企业贷款</a>
+                <span>|</span>
+                <a href="#">办公室租赁</a>
+                <span>|</span>
+                <a href="#">社保公积金代理</a>
+                <span>|</span>
+                <a href="#">法律服务</a>
+            </div>
+            <div class="last-2">
+                <p> 2019-2020 爱悦蛋糕有限公司 版权所有</p>
+            </div>
+
+        </div>
+</body>
+<script>
+        var box = document.getElementById("box");
+        var img1 = document.getElementById("img1");
+        var Simg = document.getElementById("Simg");
+        var slider = document.getElementById("slider");
+        var img2 = document.getElementById("img2");
+        var Bimg = document.getElementById("Bimg");
+
+        img1.onmouseover = function(){
+            slider.style.display = "block";
+            img2.style.display="block";
+        }
+
+        img1.onmousemove = function(e){
+            var mouseX = e.clientX;
+            var mouseY = e.clientY;
+            var boxLeft = box.offsetLeft;
+            var boxTop = box.offsetTop;
+            var sliderWidth = slider.offsetWidth;
+            var sliderHeight = slider.offsetHeight;
+            var sliderLeft = mouseX-boxLeft-sliderWidth/2;
+            var sliderTop = mouseY-boxTop-sliderHeight/2;
+
+            if(sliderLeft<=0){
+              sliderLeft=0;
+            }
+            else if(sliderLeft>=(img1.offsetWidth-slider.offsetWidth)){
+              sliderLeft = img1.offsetWidth-slider.offsetWidth;
+            }
+            if(sliderTop<=0){
+              sliderTop=0;
+            }
+            else if(sliderTop>=(img1.offsetHeight-slider.offsetHeight)){
+              sliderTop=img1.offsetHeight-slider.offsetHeight;
+            }
+            slider.style.left=sliderLeft+"px";
+            slider.style.top=sliderTop+"px";
+
+            var count = Bimg.offsetHeight/Simg.offsetHeight;
+            Bimg.style.left = -sliderLeft*count+"px";
+            Bimg.style.top = -sliderTop*count+"px";        
+        }
+
+        img1.onmouseout = function(){
+            slider.style.display = "none";
+            // img2.style.display = "none";
+        }
+    </script>
+
+</html>
