@@ -1,108 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>sweet life</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            border: 0;
-            background-size: 100% 100%;
-        }
+	<script src="snow.js"></script>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			border: 0;
+			background-size: 100% 100%;
+		}
 
-        nav {
-            position: fixed;
-            z-index: 1;
-            width: 100%;
-            height: 60px;
-            background-color: #333;
-            box-sizing: border-box;
-            display: inline-block;
-        }
+		nav {
+			position: fixed;
+			z-index: 1;
+			width: 100%;
+			height: 60px;
+			background-color: #333;
+			box-sizing: border-box;
+			display: inline-block;
+		}
 
-        ul {
-            width: 100%;
-            height: 60px;
-            vertical-align: middle;
-        }
+		ul {
+			width: 100%;
+			height: 60px;
+			vertical-align: middle;
+		}
 
-        li {
-            display: inline-block;
-            width: 19%;
-            text-align: center;
-            height: 60px;
-            line-height: 60px;
-            cursor: pointer;
-            color: #000000;
-            transition: color 0.4s ease-in-out;
-        }
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-        } 
-        li:hover {
-            color: #FFFFFF;
-        }
+		li {
+			display: inline-block;
+			width: 19%;
+			text-align: center;
+			height: 60px;
+			line-height: 60px;
+			cursor: pointer;
+			color: #000000;
+			transition: color 0.4s ease-in-out;
+		}
 
-        .move {
-            display: inline-block;
-            border: 4px solid  rgb(253, 109, 133);
-            height: 0px;
-            background-color:   rgb(253, 109, 133);
-            position: absolute;
-            left: 0;
-            top: 56px;
-            transition: left 0.4s ease-in-out;
-        }
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+		}
 
-        li:nth-child(1):hover~.move {
-            left: 0;
-        }
+		li:hover {
+			color: #FFFFFF;
+		}
 
-        li:nth-child(2):hover~.move {
-            left: 20%;
-        }
+		.move {
+			display: inline-block;
+			border: 4px solid rgb(253, 109, 133);
+			height: 0px;
+			background-color: rgb(253, 109, 133);
+			position: absolute;
+			left: 0;
+			top: 56px;
+			transition: left 0.4s ease-in-out;
+		}
 
-        li:nth-child(3):hover~.move {
-            left: 40%;
-        }
+		li:nth-child(1):hover~.move {
+			left: 0;
+		}
 
-        li:nth-child(4):hover~.move {
-            left: 60%;
-        }
-        
-        li:nth-child(5):hover~.move {
-            left: 80%;
-        }
-    </style>
+		li:nth-child(2):hover~.move {
+			left: 20%;
+		}
+
+		li:nth-child(3):hover~.move {
+			left: 40%;
+		}
+
+		li:nth-child(4):hover~.move {
+			left: 60%;
+		}
+
+		li:nth-child(5):hover~.move {
+			left: 80%;
+		}
+
+		/* 雪花 */
+		.snow {
+			background: white;
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+	</style>
 	<link rel="stylesheet" href="dazuoye.css">
-    <script src="dazuoye.js"></script>
+	<script src="dazuoye.js"></script>
 </head>
+
 <body>
 	<!-- 最上方导航栏 -->
-    <div class="head">
-	    <nav>
-	        <ul>
-	            <li><a class="active" href="#home">主页</a></li>
-	            <li><a class="active" href="#news">蛋糕小铺</a></li>
-	            <li><a class="active" href="#news">定制蛋糕</a></li>
-	            <li><a class="active" href="#news">加入我们</a></li>
-	            <li><a class="active" href="#news">登陆/注册</a></li>
-	            <li class="move"></li>
-	        </ul>
-	    </nav>
-	    <!-- 找一个搜索图片 -->
+	<div class="head">
+		<nav>
+			<ul>
+				<li><a class="active" href="https://dingyuying.github.io/sweet-life/">主页</a></li>
+				<li><a class="active" href="#news">蛋糕小铺</a></li>
+				<li><a class="active" href="#news">定制蛋糕</a></li>
+				<li><a class="active" href="#news">加入我们</a></li>
+				<li><a class="active" href="https://dingyuying.github.io/sweet-life/cake.html">登陆/注册</a></li>
+				<li class="move"></li>
+			</ul>
+		</nav>
+		<!-- 找一个搜索图片 -->
 		<div class="head-bot">
 			<div class="head-bottom">
 				<div class="hb-1">
 					<span>所有产品</span>
 				</div>
 				<div class="hb-2">
-					<input type="text" value="请输入搜索内容" name="qingshuru" class="text"/>
+					<input type="text" value="请输入搜索内容" name="qingshuru" class="text" />
 				</div>
 				<div class="search">
 					<img src="image/search.png">
@@ -150,37 +164,41 @@
 					<ul>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake9.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake9.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥56</p>
+								<p>价格：¥560.00</p>
 								<p>巧克力冰激凌</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake10.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake10.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥100.00</p>
+								<p>价格：¥1000.00</p>
 								<p>慕斯奶油蛋糕</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake11.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake11.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥50.00</p>
+								<p>价格：¥500.00</p>
 								<p>松仁蓝莓夹心蛋糕</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake12.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake12.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥80</p>
+								<p>价格：¥800.00</p>
 								<p>巧克力薄饼</p>
 							</div>
 						</li>
@@ -189,37 +207,41 @@
 					<ul>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake1.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake1.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥120</p>
+								<p>价格：¥1200.00</p>
 								<p>松仁巧克力蛋糕</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake2.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake2.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥399.00</p>
+								<p>价格：¥3990.00</p>
 								<p>水果四层奶油蛋糕</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake5.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake5.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥50</p>
+								<p>价格：¥500.00</p>
 								<p>巧克力甜甜圈</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake4.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake4.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥50.00</p>
+								<p>价格：¥500.00</p>
 								<p>拔丝巧克力蛋糕</p>
 							</div>
 						</li>
@@ -228,41 +250,45 @@
 					<ul>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake3.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake3.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥50.00</p>
+								<p>价格：¥500.00</p>
 								<p>拔丝奶油蛋糕</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake6.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake6.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥50.00</p>
+								<p>价格：¥500.00</p>
 								<p>蓝莓派</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake7.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake7.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥35.00</p>
+								<p>价格：¥350.00</p>
 								<p>巧克力甜点</p>
 							</div>
 						</li>
 						<li>
 							<div class="cake-pic">
-								<img src="image/cake8.jpg">
+								<a href="https://dingyuying.github.io/sweet-life/lixiaohan.html"><img
+										src="image/cake8.jpg"></a>
 							</div>
 							<div class="jianjie">
-								<p>价格：¥35.00</p>
+								<p>价格：¥350.00</p>
 								<p>芝士甜点</p>
 							</div>
 						</li>
-					</ul>	
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -270,38 +296,83 @@
 
 	<!-- 底部 -->
 	<div class="bottom">
-        <div class="last-1" style="width:100%;height:40px;margin:0 auto;background-color:burlywood;">
-            <div style="height:20px;"><img src="image/buttom.png" alt="" width="100%"></div>
-            <div style="margin: 0 auto;color:aliceblue;font-size: 20px;font-family:cursive">
-                --- 源自18国优选原料用心精制而成 ---
-            </div>
-        </div>
-    </div>
-    <div class="bottom">
-        <div class="last">
-            <div class="last-1">
-                <a href="#">首页</a>
-                <span>|</span>
-                <a href="#">蛋糕小铺</a>
-                <span>|</span>
-                <a href="#">联系我们</a>
-                <span>|</span>
-                <a href="#">股权交易与变更</a>
-                <span>|</span>
-                <a href="#">企业贷款</a>
-                <span>|</span>
-                <a href="#">办公室租赁</a>
-                <span>|</span>
-                <a href="#">社保公积金代理</a>
-                <span>|</span>
-                <a href="#">法律服务</a>
-            </div>
-            <div class="last-2">
-                <p> 2019-2020 爱悦蛋糕有限公司 版权所有</p>
-            </div>
+		<div class="last-1" style="width:100%;height:40px;margin:0 auto;background-color:burlywood;">
+			<div style="height:20px;"><img src="image/buttom.png" alt="" width="100%"></div>
+			<div style="margin: 0 auto;color:aliceblue;font-size: 20px;font-family:cursive">
+				--- 源自18国优选原料用心精制而成 ---
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="last">
+			<div class="last-1">
+				<a href="https://dingyuying.github.io/sweet-life/">首页</a>
+				<span>|</span>
+				<a href="#">蛋糕小铺</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">股权交易与变更</a>
+				<span>|</span>
+				<a href="#">企业贷款</a>
+				<span>|</span>
+				<a href="#">办公室租赁</a>
+				<span>|</span>
+				<a href="#">社保公积金代理</a>
+				<span>|</span>
+				<a href="#">法律服务</a>
+			</div>
+			<div class="last-2">
+				<p> 2019-2020 爱悦蛋糕有限公司 版权所有</p>
+			</div>
 
-        </div>
-    </div>
+		</div>
+	</div>
+	<script>
+		//获取屏幕宽高
+		var windowWidth = window.screen.width - 30;
+            var windowHeight = window.screen.height * 1.5;
+
+            //创建雪花
+            function createSnow() {
+                var left = 0;
+                var top = 0;
+
+                //定义一个初始化随机数,使雪花在屏幕中
+                var left_random = Math.random() * windowWidth;
+                var top_random = Math.random() * windowHeight;
+                var div = document.createElement('div');
+                div.className = 'snow';
+                div.style.transform = 'scale(' + (Math.random()) + ')'
+
+                document.body.appendChild(div);
+
+                //雪花飘落
+                setInterval(function () {
+
+                    div.style.left = left_random + left + 'px';
+                    div.style.top = top_random + top + 'px'
+                    left += 0.2;
+                    top += 0.2;
+
+                    //如果雪花跑到屏幕外面了,让雪花重新返回屏幕顶部
+                    if (left_random + left >= windowWidth) {
+                        left_random = Math.random();
+                        left = 0;
+                    }
+
+                    if (top_random + top >= windowHeight) {
+                        top_random = Math.random();
+                        top = 0;
+                    }
+                }, 5)
+
+            }
+            for (var i = 0; i < 400; i++) {
+                createSnow()
+            }
+	</script>
 
 </body>
+
 </html>

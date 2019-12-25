@@ -10,7 +10,7 @@
             margin: 0;
             list-style: none;
             border: 0;
-            background: url("images/bg.png") no-repeat;
+            background: no-repeat;
             background-size: 100% 100%;
         }
 

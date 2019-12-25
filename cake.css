@@ -10,6 +10,7 @@ body{
 a{
 	text-decoration:none;
 	color:black;
+	left:20px;
 }
 .mainBox{
 	width:1200px;
