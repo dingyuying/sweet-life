@@ -165,7 +165,7 @@
             height: 30px;
         }
         .five{
-            height: 100px;
+            height: 160px;
             width: 1000px;
             margin:0 auto;
         }
@@ -223,6 +223,13 @@
             color: #fff;
             cursor: pointer;
         }
+        .wenzi{
+            font-size:25px;
+            font-style: "华文楷体";
+            color:gray;
+            font-weight:blod;
+        }
+
 
 /* 底部 */
         .bottom {
