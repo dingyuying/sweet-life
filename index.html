@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>心悅蛋糕</title>
+    <link rel="stylesheet" href="all.css">
+    <script src="animate.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">主页</a></li>
+            <li><a class="active" href="#news">蛋糕小铺</a></li>
+            <li><a class="active" href="#news">定制蛋糕</a></li>
+            <li><a class="active" href="#news">加入我们</a></li>
+            <li><a class="active" href="#news">登陆/注册</a></li>
+            <li class="move"></li>
+        </ul>
+
+    </nav>
+    <div class="header">
+
+    </div>
+    <!--轮播图  -->
+    <div class="box" id="box">
+        <div class="slider" id="slider">
+            <div class="slide"><img src="images/b5.png" alt=""></div>
+            <div class="slide"><img src="images/b1.png" alt=""></div>
+            <div class="slide"><img src="images/b2.png" alt=""></div>
+            <div class="slide"><img src="images/b3.png" alt=""></div>
+            <div class="slide"><img src="images/b4.png" alt=""></div>
+            <div class="slide"><img src="images/b5.png" alt=""></div>
+            <div class="slide"><img src="images/b1.png" alt=""></div>
+        </div>
+        <span id="left" onclick="perv()">
+            < </span> <span id="right" onclick="next()"> >
+        </span>
+        <ul class="nav" id="nav">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--右侧悬浮 -->
+    <div class="xuanfu">
+        <ul>
+            <li>
+                <img src="images/cart1.png">
+            </li>
+            <li>
+                <img src="images/erweima.png">
+            </li>
+            <li>
+                <img src="images/gotop.png">
+            </li>
+        </ul>
+    </div>
+    <!-- 滚动文字 -->
+    <div class="slides" id="slides" style=" margin: 0 auto;background-color: pink;">
+        <marquee>圣诞节将至，快来采购你钟意的那款美味蛋糕吧！爱悅蛋糕，好品质才值得回味。</marquee>
+    </div>
+<!--
+    <div class="slide1" style="background-color: pink;"><img
+            src="https://act.mcake.com/fangli/2019/pc/memberDay-12yue/images/cake.png" alt=""></div>
+    <div class="slide1"><img src="https://mcake.oss-cn-hangzhou.aliyuncs.com/file/343763e03b3960ec/556fc3121a7f3483.jpg"
+            alt=""></div> -->
+
+    <img src="images/middle.png" width="100%" alt="">
+    <div class="middle">
+        <div class="word1">
+            <P>圣诞星品</P>
+        </div>
+        <div class="guanggao">
+            <div class="rukou">
+                <img src="images/rukou.png" alt="" width="49%" height="80%">
+            </div>
+            <div class="rukou">
+                <img src="images/rukou2.png" alt="" width="50%" height="80%">
+            </div>
+        </div>
+    </div>
+    <div class="middle0">
+        <div class="word1">
+            <P>为你推荐</P>
+        </div>
+        <div class="guanggao">
+            <div class="rukou">
+                <img src="images/qiaokeli.png" alt="" width="36%" height="70%">
+            </div>
+            <div class="rukou">
+                <img src="images/qiaokeli (2).png" alt="" width="30%" height="70%">
+            </div>
+            <div class="rukou">
+                <img src="images/qiaokeli (3).png" alt="" width="32%" height="70%">
+            </div>
+        </div>
+        <div style="float:left" class="gushi">
+            <p>我们的品牌</p>
+            <p>始创于2019年12月末</p>
+            <p>一个温暖的冬季</p>
+            <p>SWEET LIFE</p>
+            <p>致力于打造最健康美味的</p>
+            <p>蛋糕品质</p>
+            <p>Thick dark chocolate and rich fruity Kirsch (cherry spirit)</p>
+            <p>are locked in a Pandora’s Box of plump cake layers and chocolate.</p>
+            <p>Don’t take a bite or you’ll free the passion! </p>
+            <p>OK, you can…but just a nibble…</p>
+            <p>/樱桃酒味从巧克力卷的缝隙飘出/</p>
+            <p>/向往极北的黑森林，纷飞的雪花里有精灵的歌咏/</p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div style="float:right">
+            <div >
+                <p>我们的品牌故事</p>
+            </div>
+            <video width="640" height="360" autoplay="autoplay" controls >
+                <source src="images/shipin.mp4" type="video/mp4">
+            </video>
+        </div>
+        <img src="images/xuedi.jpg" alt="" width="100%">
+    </div>
+    <div class="bottom">
+        <div class="last-1" style="width:100%;height:40px;margin:0 auto;background-color:burlywood;">
+            <div style="height:20px;"><img src="images/buttom.png" alt="" width="100%"></div>
+            <div style="margin: 0 auto;color:aliceblue;font-size: 20px;font-family:cursive">
+                --- 源自18国优选原料用心精制而成 ---
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom">
+        <div class="last">
+            <div class="last-1">
+                <a href="#">首页</a>
+                <span>|</span>
+                <a href="#">蛋糕小铺</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">股权交易与变更</a>
+                <span>|</span>
+                <a href="#">企业贷款</a>
+                <span>|</span>
+                <a href="#">办公室租赁</a>
+                <span>|</span>
+                <a href="#">社保公积金代理</a>
+                <span>|</span>
+                <a href="#">法律服务</a>
+            </div>
+            <div class="last-2">
+                <p>© 2019-2020 爱悦蛋糕有限公司 版权所有</p>
+            </div>
+
+        </div>
+
+
+        <script>
+            //获取屏幕宽高
+            var windowWidth = window.screen.width - 30;
+            var windowHeight = window.screen.height * 2.7;
+
+            //创建雪花
+            function createSnow() {
+                var left = 0;
+                var top = 0;
+
+                //定义一个初始化随机数,使雪花在屏幕中
+                var left_random = Math.random() * windowWidth;
+                var top_random = Math.random() * windowHeight;
+                var div = document.createElement('div');
+                div.className = 'snow';
+                div.style.transform = 'scale(' + (Math.random()) + ')'
+
+                document.body.appendChild(div);
+
+                //雪花飘落
+                setInterval(function () {
+
+                    div.style.left = left_random + left + 'px';
+                    div.style.top = top_random + top + 'px'
+                    left += 0.2;
+                    top += 0.2;
+
+                    //如果雪花跑到屏幕外面了,让雪花重新返回屏幕顶部
+                    if (left_random + left >= windowWidth) {
+                        left_random = Math.random();
+                        left = 0;
+                    }
+
+                    if (top_random + top >= windowHeight) {
+                        top_random = Math.random();
+                        top = 0;
+                    }
+                }, 5)
+
+            }
+            for (var i = 0; i < 400; i++) {
+                createSnow()
+            }
+            var box = document.getElementById("box");
+            var oNavlist = document.getElementById("nav").children;
+            var slider = document.getElementById("slider");
+            var left = document.getElementById("left");
+            var right = document.getElementById("right");
+            var index = 1;
+            var timer;
+            var isMoving = false;
+            /*鼠标划入开定时器*/
+            box.onmouseover = function () {
+                animate(left, { opacity: 50 });
+                animate(right, { opacity: 50 });
+                clearInterval(timer)
+            }
+            box.onmouseout = function () {
+                animate(left, { opacity: 0 })
+                animate(right, { opacity: 0 })
+                timer = setInterval(next, 3000);
+            }
+            right.onclick = next;
+            left.onclick = perv;
+            for (var i = 0; i < oNavlist.length; i++) {
+                oNavlist[i].index = i;
+                oNavlist[i].onclick = function () {
+                    index = this.index + 1;
+                    navmove();
+                    animate(slider, { left: -1534 * index });
+                }
+            }
+
+
+
+            function next() {
+                if (isMoving) {
+                    return;
+                }
+                isMoving = true;
+                index++;
+                navmove();
+                animate(slider, { left: -1534 * index }, function () {
+                    if (index == 6) {
+                        slider.style.left = "-1534px";
+                        index = 1;
+                    }
+                    isMoving = false;
+                })
+            }
+            function perv() {
+                if (isMoving) {
+                    return;
+                }
+                isMoving = true;
+                index--;
+                navmove();
+                animate(slider, { left: -1534 * index }, function () {
+                    if (index == 0) {
+                        slider.style.left = "-7670px";
+                        index = 5;
+                    }
+                    isMoving = false;
+                });
+            }
+            //轮播下一张的函数
+            function navmove() {
+                for (var i = 0; i < oNavlist.length; i++) {
+                    oNavlist[i].className = "";
+                }
+                if (index > 5) {
+                    oNavlist[0].className = "active";
+                } else if (index <= 0) {
+                    oNavlist[4].className = "active";
+                } else {
+                    oNavlist[index - 1].className = "active";
+                }
+            }
+            timer = setInterval(next, 3000);
+        </script>
+</body>
+
+</html>
