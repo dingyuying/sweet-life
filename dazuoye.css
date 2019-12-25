@@ -1,0 +1,293 @@
+/*
+* @Author: 32491
+* @Date:   2019-12-23 15:07:18
+* @Last Modified by:   32491
+* @Last Modified time: 2019-12-25 14:02:33
+*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+}
+.head{
+	height:110px ;
+	width: 100%;
+	background-color: blue;
+}
+
+.head-bot{
+	width: 100%;
+	height: 50px;
+	background-color:#333;
+	position: fixed;
+	top: 60px;
+	z-index: 1;
+}
+
+.head-bottom{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+.hb-1{
+	width: 150px;
+	height: 50px;
+	float: left;
+	display: inline-block;
+}
+span{
+	font-family: "华文楷体";
+	font-weight: bold;
+	font-size: 25px;
+	color: white;
+	line-height: 50px;
+	/* background-image: url(image/buttom.png); */
+}
+.hb-2{
+	height: 30px;
+	width: 200px;
+	border: 1px solid white ;
+	display: inline-block;
+	margin-left: 600px;
+	margin-top: 10px;
+	float: left;
+}
+
+.hb-2 input{
+	height: 30px;
+	width: 200px;
+	color: black;
+	background-color:white;
+	vertical-align:middle;
+}
+
+.search{
+	width: 30px;
+	height: 32px;
+	display: inline-block;
+	margin-top: 10px;
+	background-color: white;
+}
+.search img{
+	height: 20px;
+	width: 20px;
+	margin-top:5px;
+	background-color: white;
+	text-align: center;
+}
+
+.shop{
+	display: inline-block;
+	width:50px; 
+	height:50px;
+	float:right;
+	margin-right: 30px;
+}
+.shop img{
+	width:50px; 
+	height:50px;
+}
+
+/* 中间部分 */
+.middle-wrap{
+	width: 100%;
+	height: 1200px;
+	/* background-color: red; */
+	background-image:url(image/pink_rice.png);
+}
+.middle{
+	width: 1200px;
+	height: 1200px;
+	background-color: red;
+	margin: 0 auto;
+}
+/* 左侧部分 */
+.left{
+	width: 200px;
+	height: 1200px;
+	background-color:white;
+	float: left;
+	background-image:url(image/pink_rice.png);
+}
+.example{
+	width: 300px;
+	height: 420px;
+}
+.example li{
+	width: 300px;
+	height: 60px;
+	display: block;
+	text-align: left;
+	color:gray;
+}
+.example li:hover{
+	width: 300px;
+	height: 60px;
+	display: block;
+	text-align: left;
+	color: rgb(253, 109, 133);
+}
+.example li span{
+	font-size: 15px;
+	color:gray;
+}
+.fenge{
+	width: 200px;
+	height: 50px;
+}
+.fenge span{
+	width: 300px;
+	height: 40px;
+	color:gray;
+}
+.taste{
+	width: 300px;
+	height: 180px;
+}
+.taste li{
+	width: 300px;
+	height: 60px;
+	display: block;
+	text-align: left;
+	color: gray;
+}
+.taste li:hover{
+	width: 300px;
+	height: 60px;
+	display: block;
+	text-align: left;
+	color: rgb(253, 109, 133);
+}
+.taste li span{
+	font-size: 15px;
+	color:gray;
+}
+
+.fruit{
+	width: 300px;
+	height: 420px;
+}
+.fruit li{
+	width: 300px;
+	height: 60px;
+	display: block;
+	text-align: left;
+	color:gray ;
+}
+
+.fruit li:hover{
+	width: 300px;
+	height: 60px;
+	display: block;
+	text-align: left;
+	color:rgb(253, 109, 133);
+}
+
+.fruit li span{
+	font-size: 15px;
+	color:gray;
+}
+
+/* 右侧部分 */
+.right{
+	width: 1000px;
+	height: 1200px;
+	background-color:white;
+	float:left;
+	background-image:url(image/pink_rice.png);
+}
+.cake li{
+	float: left;
+	height:320px ;
+	width: 220px;
+	/* border: 1px solid #878787; */
+	margin-left:25px;
+	padding-top: 50px;
+	text-align: center;
+	position: relative;
+}
+
+.cake-pic img{
+	width: 200px;
+	height: 320px;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+}
+
+.jianjie{
+	height: 66px;
+	width: 200px;
+	background-color:#4c4c4c ;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	margin-left: 10px;
+	padding-bottom: 1px;
+}
+.jianjie p{
+	width: 200px;
+	height: 33px;
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 33px;
+}
+/* 滑上去 */
+.jianjie:hover{
+	height:319px ;
+	width: 200px;
+	background-color:#474744;
+	opacity: 0.7;
+	line-height:40px ;
+}
+.jianjie:hover p:first-child{
+	margin-top: 110px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	font-size: 22.14px;
+}
+.jianjie:hover p:last-child{
+	font-family: "微软雅黑";
+	font-weight: normal;
+	font-size: 22.14px;
+}
+
+/* 底部 */
+
+.bottom {
+	height: 65px;
+    width: 100%;       
+    background: #5d5f5d;
+    margin: 0 auto;    
+}
+
+.last {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bottom .last-1 {
+	margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    height: 35px;
+}
+
+.bottom .last-1 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 4px;
+    text-align: center;
+}
+.bottom .last-2 p {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+.gushi{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
